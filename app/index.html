@@ -6,21 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>VR</title>
-
+  <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel='stylesheet' href='css/slider.css'>
   <link rel="stylesheet" href="css/main.css">
+  <link rel='stylesheet' href='css/slider.css'>
+  <link rel='stylesheet' href='css/video.css'>
 </head>
 
 <body>
-  
   <div class="site-logo">
     <img class="logo" src="images/logo_VR.png" alt="VR Logo">
+  </div>
+
+  <div class="vr-info-title">
+    <textarea class="title" name="title" value="Title" ng-model="title">{{ title }}</textarea>
+  </div>
+
+  <div class="vr-info-content">
+    <textarea class="content" name="textarea" ng-model="content">{{ content }}</textarea>
   </div>
 
   <div class="slider slider-height">
@@ -31,82 +39,68 @@
 
     <div class="slides">
 
-      <div class="slide active blue" data-icon="&#xf0ac;">
-        <h2><textarea class="title" name="title" value="Title" ng-model="title">{{ title }}</textarea></h2>
-        <textarea name="textarea" ng-model="content">{{ content }}</textarea>
+      <div class="slide active white">
+        <div class="slide-welcome">
+          <img class="logo-welcome" src="images/logo_VR.png" alt="VR Logo">
+          <h2>Welcome</h2>
+        </div>
       </div>
 
       <div class="slide white" data-icon="&#xf0f3;">
-        <h2><textarea class="title" name="title" value="Title" ng-model="title">{{ title }}</textarea></h2>
-        <textarea name="textarea" ng-model="content">{{ content }}</textarea>
+        <img class="slide-content" src="images/slides/slide01.png" alt="Slides">
       </div>
 
-      <div class="slide red" data-icon="&#xf013;">
-        <h2><textarea class="title" name="title" value="Title" ng-model="title">{{ title }}</textarea></h2>
-        <textarea name="textarea" ng-model="content">{{ content }}</textarea>
+      <div class="slide white" data-icon="&#xf013;">
+        <img class="slide-content" src="images/slides/slide02.png" alt="Slides">
       </div>
 
       <div class="slide white" data-icon="&#xf0ac;">
-        <h2><textarea class="title" name="title" value="Title" ng-model="title">{{ title }}</textarea></h2>
-        <textarea name="textarea" ng-model="content">{{ content }}</textarea>
+        <img class="slide-content" src="images/slides/slide03.png" alt="Slides">
       </div>
 
-      <div class="slide red" data-icon="&#xf0ac;">
+      <div class="slide white" data-icon="&#xf0ac;">
+        <img class="slide-content" src="images/slides/slide04.png" alt="Slides">
+      </div>
+
+      <div class="slide white" data-icon="&#xf0f3;">
+        <img class="slide-content" src="images/slides/slide05.png" alt="Slides">
+      </div>
+
+      <div class="slide white" data-icon="&#xf013;">
+        <img class="slide-content" src="images/slides/slide06.png" alt="Slides">
+      </div>
+
+      <div class="slide white" data-icon="&#xf0ac;">
+        <img class="slide-content" src="images/slides/slide07.png" alt="Slides">
+      </div>
+
+      <div class="slide white" data-icon="&#xf0f3;">
+        <img class="slide-content" src="images/slides/slide08.png" alt="Slides">
+      </div>
+
+      <div class="slide white" data-icon="&#xf0ac;">
         <div class="video-background">
           <div class="video-foreground">
             <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=1&showinfo=0&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
-        <div id="vidtop-content">
-          <div class="vid-info">
-            <h2><textarea class="title" name="title" value="Title" ng-model="title">{{ title }}</textarea></h2>
-            <textarea name="textarea" ng-model="content">{{ content }}</textarea>
-          </div>
-        </div>
-      </div>
-      <!--
-      <div class="slide red" data-icon="&#xf0ac;">
-        <div class="video-background">
-          <div class="video-foreground">
-            <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=1&showinfo=0&rel=0&autoplay=1&loop=0" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div id="vidtop-content">
-          <div class="vid-info">
-            <h2><textarea class="title" name="title" value="Title" ng-model="title">{{ title }}</textarea></h2>
-            <textarea name="textarea" ng-model="content">{{ content }}</textarea>
-          </div>
-        </div>
       </div>
 
-      <div class="slide red" data-icon="&#xf0ac;">
-        <div class="video-background">
-          <div class="video-foreground">
-            <iframe src="https://www.youtube.com/embed/h8mwhm0PoKc?controls=1&showinfo=0&rel=0&autoplay=1&loop=0" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div id="vidtop-content">
-          <div class="vid-info">
-            <h2><textarea class="title" name="title" value="Title" ng-model="title">{{ title }}</textarea></h2>
-            <textarea name="textarea" ng-model="content">{{ content }}</textarea>
-          </div>
-        </div>
-      </div>
+      <div class="slide white" data-icon="&#xf0ac;">
+        <!--
+        <video id="bgvid" playsinline autoplay>
+          <source src="images/slides/demo.mp4" type="video/mp4">
+        </video>
+        -->
 
-      <div class="slide blue" data-icon="&#xf0ac;">
-        <div class="video-background">
-          <div class="video-foreground">
-            <iframe src="https://www.youtube.com/embed/v64KOxKVLVg?controls=1&showinfo=0&rel=0&autoplay=1&loop=0" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div id="vidtop-content">
-          <div class="vid-info">
-            <h2><textarea class="title" name="title" value="Title" ng-model="title">{{ title }}</textarea></h2>
-            <textarea name="textarea" ng-model="content">{{ content }}</textarea>
-          </div>
+        <video controls id="bgvid" playsinline autopla>
+          <source src="images/slides/demo.mp4" type="video/mp4">
+        </video>
+
+        <div id="polina">
+          <button>Pause</button>
         </div>
       </div>
-      -->
     </div>
 
     <div class="bullets"></div>
@@ -118,6 +112,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/video.js"></script>
 </body>
 
 </html>

@@ -35,6 +35,7 @@ p {
   transition: all .3s;
   opacity: 0;
   z-index: 10000;
+  background-color: #003969;
 }
 
 .slider .next {
@@ -158,6 +159,7 @@ p {
   position: relative;
   display: inline-block;
   background: rgba(255, 255, 255, .8);
+  background-color: #003969;;
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -170,6 +172,7 @@ p {
 
 .slider .bullets .bullet.active {
   background: rgba(255, 255, 255, .4);
+  background-color: #009f84;
 }
 
 .slider .bullets .bullet:hover {
@@ -182,27 +185,79 @@ p {
   overflow-y: hidden;
 }
 
+.slide-content {
+  width: 40%;
+}
+
+.slide-welcome {
+  color: #003969;
+  margin-top: -10%;
+}
+
+.slide-welcome .logo-welcome {
+  width: 45%;
+}
+
+.slide-welcome h2 {
+  font-size: 2.5;
+  margin-top: -5%;
+}
+
+.vr-info-title {
+  position: absolute;
+  width: 50%;
+  height: 25%;
+  top: 2%;
+  left: 25%;
+  z-index: 10000;
+}
+
+.vr-info-content {
+  position: absolute;
+  width: 30%;
+  height: 70%;
+  bottom: 0%;
+  right: 3%;
+  z-index: 10000;
+}
+
+.vr-info-title:hover, .vr-info-content:hover {
+  border: 1px #003969 dashed;
+}
+
+@media screen and (min-width: 680px) {
+  .vr-info-content {
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    bottom: 6%;
+    right: 3%;
+    z-index: 10000;
+  }
+}
+
 textarea {
-  width: 75%;
-  height: 45%;
+  width: 100%;
+  height: 100%;
   background-color: transparent;
-  color: white;
+  color: #003969;
+  text-shadow: 2px 2px #ccc;
   border: none;
+  resize: none
 }
 
 textarea.title {
-  background-color: transparent;
-  border: none;
   text-align: center;
+  height: 100%;
+  font-weight: 300;
+  font-size: 3vw;
 }
 
-textarea.video {
-  background-color: transparent;
-  border: none;
-  text-align: center;
-  height: 60%;
+textarea.content {
+  text-align: justify;
+  font-size: 1.2vw;
+  line-height: 1.7em;
 }
-
 
 /*
  * Video
