@@ -11,6 +11,13 @@ body {
 }
 
 .logo {
-	width: 40%;
+	width: 20%;
 	opacity: 0.4;
+}
+
+@media screen and (min-width: 680px) {
+	.logo {
+		width: 40%;
+		opacity: 0.4;
+	}
 }
