@@ -1,11 +1,16 @@
 body {
 	background: white;
 	color: gray;
-	/*
-	background-image: url('../images/slides/slide01.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto;
-	background-attachment: fixed;
-	*/
+}
+
+.site-logo {
+  position: fixed;
+  top: 0%;
+  left: 5%;
+	z-index: 9999;
+}
+
+.logo {
+	width: 40%;
+	opacity: 0.4;
 }
