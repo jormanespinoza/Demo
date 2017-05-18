@@ -42,7 +42,7 @@ $(document).on("click", ".bullet", function() {
   var $activeSlide = $(".slide.active");
   var currentIndex = $activeSlide.index();
   var targetIndex = $(this).index();
-  console.log(currentIndex, targetIndex);
+  // console.log(currentIndex, targetIndex);
   var $theSlide = $(".slide:nth-child(" + (targetIndex + 1) + ")");
   gotoSlide($activeSlide, $theSlide, currentIndex > targetIndex ? "inactiveRight" : "inactiveLeft");
 })
@@ -62,7 +62,7 @@ function addBullets() {
 function resetBullets() {
   $(".bullet.active").removeClass("active");
   var index = $(".slide.active").index() + 1;
-  console.log(index);
+  // console.log(index);
   $(".bullet:nth-child(" + index + ")").addClass("active");
 }
 addBullets();
