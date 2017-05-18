@@ -4,7 +4,7 @@ var pauseButton = document.querySelector("#polina button");
 if (window.matchMedia('(prefers-reduced-motion)').matches) {
   vid.removeAttribute("autoplay");
   vid.pause();
-  pauseButton.innerHTML = "Paused";
+  pauseButton.innerHTML = "Pause";
 }
 
 function vidFade() {
@@ -25,6 +25,6 @@ pauseButton.addEventListener("click", function() {
     pauseButton.innerHTML = "Pause";
   } else {
     vid.pause();
-    pauseButton.innerHTML = "Paused";
+    pauseButton.innerHTML = "Play";
   }
 })
