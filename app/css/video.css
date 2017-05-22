@@ -16,7 +16,7 @@ video {
   opacity: .5;
 }
 
-#polina {
+.slide-video {
   font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
   font-weight: 100;
   color: white;
@@ -36,7 +36,7 @@ h1 {
   letter-spacing: .3rem;
 }
 
-#polina button {
+.slide-video button {
   display: block;
   width: 80%;
   padding: .4rem;
@@ -50,7 +50,7 @@ h1 {
   transition: .3s background;
 }
 
-#polina button:hover {
+.slide-video button:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 

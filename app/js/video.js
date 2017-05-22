@@ -1,5 +1,5 @@
 var vid = document.getElementById("bgvid");
-var pauseButton = document.querySelector("#polina button");
+var pauseButton = document.querySelector("#slide-video button");
 
 vid.addEventListener('ended', function() {
   // only functional if "loop" is removed
