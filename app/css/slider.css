@@ -151,8 +151,17 @@ p {
 .slider .bullets {
   text-align: center;
   position: absolute;
-  bottom: 20px;
+  bottom: 12%;
   width: 100%;
+}
+
+@media screen and (min-width: 680px) {
+  .slider .bullets {
+    text-align: center;
+    position: absolute;
+    bottom: 8%;
+    width: 100%;
+  }
 }
 
 .slider .bullets .bullet {
@@ -164,7 +173,7 @@ p {
   width: 10px;
   height: 10px;
   z-index: 14;
-  margin: 0 10px;
+  margin: 0 7px;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all .3s;
@@ -186,7 +195,11 @@ p {
 }
 
 .slide-content {
-  width: 40%;
+  width: 42.5%;
+}
+
+.height-adjust {
+  width: 50%;
 }
 
 .slide-welcome {
@@ -215,9 +228,9 @@ p {
 .vr-info-content {
   position: absolute;
   width: 30%;
-  height: 70%;
+  height: 60%;
   bottom: 0%;
-  right: 3%;
+  right: 6%;
   z-index: 10000;
 }
 
@@ -241,9 +254,10 @@ textarea {
   height: 100%;
   background-color: transparent;
   color: #003969;
-  text-shadow: 2px 2px #ccc;
+  text-shadow: 2px 2px #fff;
   border: none;
-  resize: none
+  resize: none;
+  font-weight: bold;
 }
 
 textarea.title {
@@ -255,14 +269,28 @@ textarea.title {
 
 textarea.content {
   text-align: justify;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   line-height: 1.7em;
+  padding: 2.5%;
+}
+
+/*
+ * VR
+ *
+*/
+
+.vrview {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*
  * Video
  *
- */
+*/
 
 * {
   box-sizing: border-box;

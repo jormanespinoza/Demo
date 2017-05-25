@@ -2,7 +2,7 @@
 
 ## Installation/Usage:
 
-To try this example, follow these 4 simple steps. 
+To try this example, follow these 4 simple steps.
 
 **Step 1**: Clone this entire repo
 ```bash
@@ -26,8 +26,6 @@ $ npm start
 
 ### Additional Info:
 
-
-
 To see the live-updating and CSS injecting, simply perform changes to either `index.html` or `css/main.css`
 
 ### Preview of `app.js`:
@@ -45,4 +43,3 @@ browserSync({
     files: ["app/*.html", "app/css/*.css"]
 });
 ```
-
