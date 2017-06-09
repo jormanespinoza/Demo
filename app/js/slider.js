@@ -6,7 +6,7 @@ function calculateHeight() {
   $slider.height(height);
 }
 
-$(window).resize(function() {
+$(window).resize(function () {
   calculateHeight();
   clearTimeout($.data(this, 'resizeTimer'));
 });
@@ -23,26 +23,23 @@ function gotoSlide($activeSlide, $slide, className) {
   setTimeout(resetSlides, 300);
 }
 
-$(".next").on("click", function() {
+$(".next").on("click", function () {
   var $activeSlide = $(".slide.active"),
     $nextSlide = $activeSlide.next(".slide").length != 0 ? $activeSlide.next(".slide") : $(".slide:first-child");
-  console.log($nextSlide);
   gotoSlide($activeSlide, $nextSlide, "inactiveLeft");
 });
-$(".previous").on("click", function() {
+$(".previous").on("click", function () {
   var $activeSlide = $(".slide.active"),
     $prevSlide = $activeSlide.prev(".slide").length != 0 ? $activeSlide.prev(".slide") : $(".slide:last-child");
-
   gotoSlide($activeSlide, $prevSlide, "inactiveRight");
 });
-$(document).on("click", ".bullet", function() {
+$(document).on("click", ".bullet", function () {
   if ($(this).hasClass("active")) {
     return;
   }
   var $activeSlide = $(".slide.active");
   var currentIndex = $activeSlide.index();
   var targetIndex = $(this).index();
-  // console.log(currentIndex, targetIndex);
   var $theSlide = $(".slide:nth-child(" + (targetIndex + 1) + ")");
   gotoSlide($activeSlide, $theSlide, currentIndex > targetIndex ? "inactiveRight" : "inactiveLeft");
 })

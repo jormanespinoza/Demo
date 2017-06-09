@@ -1,7 +1,6 @@
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
-
-var radius = 0.5;
+var radius = 1;
 var dragging = false;
 
 canvas.width = window.innerWidth;
@@ -55,17 +54,17 @@ var setRadius = function (newRadius) {
   }
   radius = newRadius;
   context.lineWidth = radius * 2;
-
   radSpan.innerHTML = radius;
 }
 
-var minRad = 0.5,
-  maxRad = 100,
-  interval = 5,
-  defaultRad = 0.5,
-  radSpan = document.getElementById('radval'),
-  decRad = document.getElementById('decrad'),
-  incRad = document.getElementById('incrad');
+var maxRad = 100,
+interval = 5,
+defaultRad = 1,
+radSpan = document.getElementById('radval'),
+decRad = document.getElementById('decrad'),
+incRad = document.getElementById('incrad');
+minRad = 0.5,
+
 decRad.addEventListener('click', function () {
   setRadius(radius - interval);
 })

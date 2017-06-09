@@ -25,14 +25,14 @@ body {
 }
 
 .draw-button {
-  position: absolute;    
+  position: absolute;
   top: 2%;
   right: 2%;
   z-index: 10000;
 }
 
 .back-button {
-  position: absolute;    
+  position: absolute;
   top: 12%;
   right: 2%;
   z-index: 10000;
