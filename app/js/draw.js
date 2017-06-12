@@ -33,7 +33,7 @@ var disengage = function () {
 }
 
 var CleanCanvas = function () {
-  context.fillStyle = 'white';
+  context.fillStyle = '#ccc';
   context.fillRect(0, 0, window.innerWidth, window.innerWidth);
   setSwatch({
     target: document.getElementsByClassName("swatch")[0]
@@ -58,11 +58,12 @@ var setRadius = function (newRadius) {
 }
 
 var maxRad = 100,
-interval = 5,
-defaultRad = 1,
-radSpan = document.getElementById('radval'),
-decRad = document.getElementById('decrad'),
-incRad = document.getElementById('incrad');
+  interval = 5,
+  defaultRad = 1,
+  radSpan = document.getElementById('radval'),
+  decRad = document.getElementById('decrad'),
+  incRad = document.getElementById('incrad');
+
 minRad = 0.5,
 
 decRad.addEventListener('click', function () {

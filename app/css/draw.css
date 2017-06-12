@@ -9,9 +9,11 @@
 }
 
 #canvas {
+  background-color: #ccc;
   padding: 0;
   margin: 0;
   width: inherit;
+  display: block;
 }
 
 #toolbar {
